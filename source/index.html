@@ -9,14 +9,18 @@
   </head>
 
   <body class="page-body">
-    <!-- пример использования спрайта -->
-    <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
-    <svg>
-      <use href="/__spritemap#sprite-user"></use>
-    </svg>
-    <!-- примеры требуемых атрибутов data-test="*" -->
-    <div data-test="hero">hero</div>
-    <div data-test="about">about</div>
+    
+    <header class="header hero" data-test="hero">
+      <div class="container">
+        <a class="hero__logo" href="#">
+          <img class="hero__logo-img" src="/__spritemap#logo-mobile" width="100" height="20" alt="Логотип SuperGym">
+        </a>
+        
+      </div>
+    </header>
+    
+    
+    <!-- <div data-test="about">about</div>
     <div data-test="price">price</div>
     <div data-test="games">games</div>
     <div data-test="juri">juri</div>
@@ -25,8 +29,20 @@
     <div data-test="faq">faq</div>
     <div data-test="reviews">reviews</div>
     <div data-test="form">form</div>
-    <div data-test="footer">footer</div>
+    <div data-test="footer">footer</div> -->
+
+    <!-- пример использования спрайта -->
+    <!-- <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
+    <svg>
+      <use href="/__spritemap#sprite-user"></use>
+    </svg> -->
+    <!-- примеры требуемых атрибутов data-test="*" -->
+
     <script type="module" src="js/main.js"></script>
+
+    <!-- <svg>
+          <use href="/__spritemap#sprite-user"></use>
+        </svg>  -->
   </body>
 
 </html>
