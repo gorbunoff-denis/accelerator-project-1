@@ -1,3 +1,26 @@
 .hero {
-  background: linear-gradient(90deg, #1c3477 0%, #1c3477 0.01%, #1a3578 39.11%, #73184b 75.5%, #b4022a 100%);
+  background: $primary-gradient;
+}
+
+.hero__header {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding: 16px 0;
+  margin: 0;
+}
+
+.hero__contact {
+  font-family: $secondary-font;
+  display: block;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0;
+  text-align: left;
+  text-decoration: none;
+  color: $white-color;
+  margin: 0;
+
+  outline: 1px red solid;
 }
