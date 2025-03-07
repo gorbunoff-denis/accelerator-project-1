@@ -1,5 +1,6 @@
 .hero {
   background: $primary-gradient;
+  min-height: 412px;
 }
 
 .hero__header {
@@ -20,21 +21,27 @@
   text-decoration: none;
   color: $white-color;
   margin: 0;
+  max-width: 150px;
+  overflow: hidden;
 }
 
 .hero__content {
   display: grid;
   grid-template-columns: 113px 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: auto;
+  row-gap: 47px;
 }
 
+// .hero__title-container {
+//   //outline: 1px solid blue;
+// }
+
 .hero__place {
-  //display: inline-block;
   font-family: $primary-font;
   font-size: 32px;
   font-weight: 600;
   line-height: 32px;
-  letter-spacing: 0;
+  letter-spacing: 0.1px;
   text-align: right;
   color: $white-color;
   margin: 0;
@@ -46,23 +53,25 @@
   font-size: 62px;
   font-weight: 800;
   line-height: 62px;
-  letter-spacing: 0.02em;
+  letter-spacing: 1px;
   text-transform: uppercase;
   text-align: right;
   color: $white-color;
   margin: 0;
-  padding-top: 13px;;
+  margin-right: -1px;
+  padding-top: 13px;
+
 }
 
-.hero__descriprtion-list {
+.hero__descriprtion-container {
   align-content: end;
   padding: 0;
   margin: 0;
   list-style-type: none;
-  outline: green 1px solid;
+  justify-content: end;
 }
 
-.hero__descriprion-item {
+.hero__description {
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
@@ -73,6 +82,55 @@
   margin: 0;
 }
 
-.hero__image {
+.hero__image-container {
   display: none;
+}
+
+.hero__button {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: center;
+  min-height: 60px;
+  padding: 22px;
+  background: transparent;
+  border: 2px solid $white-color;
+  color: $white-color;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 12px;
+  letter-spacing: 0;
+}
+
+.hero__button:hover, .button-style:focus {
+  background: $white-color;
+  color: $accent-color;
+}
+
+@media (min-width: $tablet-width) {
+  .hero__content {
+    grid-template-columns: 150px 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "description title image"
+      "description button image";
+    outline: 1px red solid;
+  }
+
+  .hero__descriprtion-container {
+    grid-area: description;
+    padding-right: 26px;
+    align-content: center;
+    outline: green 1px solid;
+  }
+  
+  .hero__image-container {
+    display: block;
+    grid-area: image;
+  }
+
+  .hero__button {
+    grid-area: button;
+  }
 }
