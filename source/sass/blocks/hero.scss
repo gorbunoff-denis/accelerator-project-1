@@ -30,11 +30,8 @@
   grid-template-columns: 113px 1fr;
   grid-template-rows: auto;
   row-gap: 47px;
+  overflow: hidden;
 }
-
-// .hero__title-container {
-//   //outline: 1px solid blue;
-// }
 
 .hero__place {
   font-family: $primary-font;
@@ -46,6 +43,10 @@
   color: $white-color;
   margin: 0;
   padding-top: 48px;
+}
+
+.hero__title-container {
+  overflow: hidden;
 }
 
 .hero__title {
@@ -60,7 +61,6 @@
   margin: 0;
   margin-right: -1px;
   padding-top: 13px;
-
 }
 
 .hero__descriprtion-container {
@@ -84,13 +84,15 @@
 
 .hero__image-container {
   display: none;
+  margin: 0;
+  font-size: 0;
 }
 
 .hero__button {
   grid-column: 1 / -1;
   display: flex;
   justify-content: center;
-  min-height: 60px;
+  height: 59px;
   padding: 22px;
   background: transparent;
   border: 2px solid $white-color;
@@ -101,6 +103,7 @@
   font-weight: 700;
   line-height: 12px;
   letter-spacing: 0;
+  overflow: hidden;
 }
 
 .hero__button:hover, .button-style:focus {
@@ -109,20 +112,52 @@
 }
 
 @media (min-width: $tablet-width) {
+  .hero__header {
+    padding: 30px 0;  
+  }
+
+  .hero__contact {
+    font-size: 24px;
+    line-height: 24px;
+    max-width: 165px;
+  }
+  
   .hero__content {
-    grid-template-columns: 150px 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    max-height: 768px;
+    grid-template-columns: 139px 215px 324px;
+    grid-template-rows: 250px auto;
     grid-template-areas:
       "description title image"
       "description button image";
-    outline: 1px red solid;
+      gap: 0;
+      padding-bottom: 98px;
   }
 
   .hero__descriprtion-container {
     grid-area: description;
     padding-right: 26px;
     align-content: center;
-    outline: green 1px solid;
+    overflow: hidden;
+  }
+
+  .hero__description {
+    line-height: 22px;
+  }
+  
+
+  .hero__place {
+    padding: 30px 30px 0 0;
+    font-size: 42px;
+    line-height: 42px;
+    letter-spacing: 0;
+  }
+
+  .hero__title {
+    padding: 10px 30px 0 0;
+    font-size: 72px;
+    letter-spacing: 2px;
+    line-height: 85px;
+    margin-right: -2px;
   }
   
   .hero__image-container {
@@ -132,5 +167,10 @@
 
   .hero__button {
     grid-area: button;
+    height: 56px;
+    margin: 18px 30px 0 0;
+    padding: 20px 10px;
+    align-self: center;
+    align-content: baseline;
   }
 }
