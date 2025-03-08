@@ -1,18 +1,24 @@
 .hero {
   background: $primary-gradient;
   min-height: 412px;
+  position: relative;
 }
 
 .hero__header {
+  position: relative;
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
   justify-content: space-between;
   padding: 16px 0;
   margin: 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .hero__contact {
   display: block;
+  position: relative;
   font-size: 22px;
   font-weight: 700;
   line-height: 22px;
@@ -22,18 +28,25 @@
   color: $white-color;
   margin: 0;
   max-width: 150px;
+  max-height: 100px;
+  text-overflow: ellipsis;
   overflow: hidden;
+  white-space: wrap;
 }
 
 .hero__content {
+  position: relative;
   display: grid;
   grid-template-columns: 113px 1fr;
   grid-template-rows: auto;
   row-gap: 47px;
+  text-overflow: ellipsis;
   overflow: hidden;
+  white-space: wrap;
 }
 
 .hero__place {
+  position: relative;
   font-family: $primary-font;
   font-size: 32px;
   font-weight: 600;
@@ -46,10 +59,12 @@
 }
 
 .hero__title-container {
+  position: relative;
   overflow: hidden;
 }
 
 .hero__title {
+  position: relative;
   font-family: $primary-font;
   font-size: 62px;
   font-weight: 800;
@@ -64,14 +79,20 @@
 }
 
 .hero__descriprtion-container {
-  align-content: end;
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-end;
   padding: 0;
   margin: 0;
   list-style-type: none;
-  justify-content: end;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: wrap;
 }
 
 .hero__description {
+  position: relative;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
@@ -83,17 +104,18 @@
 }
 
 .hero__image-container {
+  position: relative;
   display: none;
   margin: 0;
   font-size: 0;
 }
 
 .hero__button {
+  position: relative;
   grid-column: 1 / -1;
   display: flex;
   justify-content: center;
   height: 59px;
-  padding: 22px;
   background: transparent;
   border: 2px solid $white-color;
   color: $white-color;
@@ -103,63 +125,72 @@
   font-weight: 700;
   line-height: 12px;
   letter-spacing: 0;
+  text-overflow: ellipsis;
   overflow: hidden;
+  white-space: wrap;
 }
 
-.hero__button:hover, .button-style:focus {
+.hero__button:hover,
+ .button-style:focus {
+  position: relative;
   background: $white-color;
   color: $accent-color;
 }
 
 @media (min-width: $tablet-width) {
+  .hero {
+    padding-bottom: 100px;
+  }
+
   .hero__header {
-    padding: 30px 0;  
+    padding: 31px 0 27px;
   }
 
   .hero__contact {
     font-size: 24px;
     line-height: 24px;
     max-width: 165px;
+    top: -1px;
   }
-  
+
   .hero__content {
-    max-height: 768px;
+    max-height: 400px;
     grid-template-columns: 139px 215px 324px;
     grid-template-rows: 250px auto;
     grid-template-areas:
-      "description title image"
+      "description title  image"
       "description button image";
-      gap: 0;
-      padding-bottom: 98px;
+    gap: 0;
   }
 
   .hero__descriprtion-container {
     grid-area: description;
     padding-right: 26px;
-    align-content: center;
+    justify-content: center;
     overflow: hidden;
+    top: 1px;
   }
 
   .hero__description {
     line-height: 22px;
   }
-  
+
 
   .hero__place {
-    padding: 30px 30px 0 0;
+    padding: 32px 30px 0 0;
     font-size: 42px;
     line-height: 42px;
     letter-spacing: 0;
   }
 
   .hero__title {
-    padding: 10px 30px 0 0;
+    padding: 9px 30px 0 0;
     font-size: 72px;
     letter-spacing: 2px;
     line-height: 85px;
     margin-right: -2px;
   }
-  
+
   .hero__image-container {
     display: block;
     grid-area: image;
@@ -168,9 +199,81 @@
   .hero__button {
     grid-area: button;
     height: 56px;
-    margin: 18px 30px 0 0;
+    margin: 21px 30px 0 0;
     padding: 20px 10px;
     align-self: center;
-    align-content: baseline;
+    align-items: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .hero {
+    padding-bottom: 120px;
+  }
+
+  .hero__header {
+    padding: 31px 0 55px;
+  }
+
+  .hero__contact {
+    font-size: 26px;
+    line-height: 26px;
+    max-width: 200px;
+    top: 0;
+  }
+
+  .hero__content {
+    max-height: 780px;
+    padding: 0 70px 0 150px;
+    grid-template-columns: 113px 300px 525px;
+    grid-template-rows: 406px 118px;
+    grid-template-areas:
+      "description title  image"
+      "description button image";
+    gap: 0;
+  }
+
+  .hero__title-container {
+    padding: 0;
+    max-height: 380px;
+  }
+
+  .hero__descriprtion-container {
+    padding: 0;
+    max-height: 400px;
+  }
+
+  .hero__description {
+    line-height: 22px;
+    left: -1px;
+  }
+
+  .hero__place {
+    padding: 52px 30px 0 0;
+    font-size: 54px;
+    line-height: 54px;
+    letter-spacing: 0;
+    margin-right: 1px;
+  }
+
+  .hero__title {
+    padding: 41px 30px 0 0;
+    font-size: 92px;
+    letter-spacing: 4px;
+    line-height: 110px;
+    margin-right: 1px;
+  }
+
+  .hero__image-container {
+    padding-left: 25px;
+  }
+
+  .hero__button {
+    margin: 0;
+    padding: 20px 10px;
+    max-width: 270px;
+    height: 66px;
+    align-self: start;
+    left: -1px;
   }
 }

@@ -1,5 +1,5 @@
 .container {
-  max-width: 320px;
+  max-width: $mobile-width;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -12,6 +12,10 @@
   }
 }
 
-//   // Desktop Viewport
-// @media (min-width: $desctop-width) {
-// }
+// Desktop Viewport
+@media (min-width: $desktop-width) {
+  .container {
+    padding: 0 103px;
+    max-width: $desktop-width;
+  }
+}
