@@ -1,0 +1,47 @@
+.about {
+  background-color: $white-color;
+}
+
+.about__title {
+  position: relative;
+  font-family: $primary-font;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: 0;
+  text-align: left;
+  margin: 41px 0 0 0;
+  color: $primary-color;
+}
+
+.about__subtitle {
+  font-family: $secondary-font;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0;
+  text-align: left;
+  margin: 11px 0 0 0;
+  color: $primary-color;
+}
+
+.wysiwyg p {
+  font-family: $secondary-font;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  letter-spacing: 0;
+  text-align: left;
+  margin: 38px 0 0 0;
+  color: $primary-color;
+}
+
+.about__illustration-img {
+  margin: 34px 0 0 -15px;
+  width: 100vw;
+}
+
+.about__illustration-video {
+  margin: 32px 0 0 -15px;
+  width: 100vw;
+}
