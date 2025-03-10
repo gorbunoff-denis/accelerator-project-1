@@ -1,3 +1,9 @@
+:root {
+  --button-play-stroke-color: #ed0233;
+  --button-play-arrow-color: #ffffff;
+  --button-play-radius: 26;
+}
+
 // fonts
 $primary-font: "Alumni-Sans", "Arial", sans-serif;
 $secondary-font: "Roboto-Condensed", "Impact", sans-serif;
@@ -7,23 +13,24 @@ $primary-color: #102654;
 $primary-gradient: linear-gradient(90deg, #1c3477 0%, #1a3578 39%, #73184b 76%, #b4022a 100%);
 $white-color: #ffffff;
 $accent-color: #103aae;
+$secondary-color: #1c3374;
+$additional-light: #f8f9fc;
+$button-focus-color: #c8c9cc; 
+$secondary-gradient: linear-gradient(136deg, #d10a42 0%, #00359f 100%);
 
-// $secondary-color: #1c3374;
-// $secondary-gradient: linear-gradient(136deg, #d10a42 0%, #00359f 100%);
-// $additional-light: #f8f9fc;
-// $additional-dark: #030a1a;
+$additional-dark: #030a1a;
 
-// $accent-gradient: linear-gradient(129deg, #d10a42 0%, #0041ca 50%);
-// $accent-darken: #2e35ac;
-// $tabs-color: #d10a42;
-// $tabs-gradient: linear-gradient(121deg, #ed0233 0%, #003EB7 100%);
-// $banner-color: #ed0233;
+$accent-gradient: linear-gradient(129deg, #d10a42 0%, #0041ca 50%);
+$accent-darken: #2e35ac;
+$tabs-color: #d10a42;
+$tabs-gradient: linear-gradient(121deg, #ed0233 0%, #003EB7 100%);
+$banner-color: #ed0233;
 
-// $grey-color: #787878;
-// $grey-blue-color: #b6bdcc;
-// $divider-color: #74819c;
-// $shadow-color: #e8e8e8;
-// $error-color: #ff121f;
+$grey-color: #787878;
+$grey-blue-color: #b6bdcc;
+$divider-color: #74819c;
+$shadow-color: #e8e8e8;
+$error-color: #ff121f;
 
 // viewports
 $mobile-width: 320px;

@@ -32,6 +32,19 @@
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: wrap;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:focus {
+    color: $secondary-color;
+  }
+
+  &:disabled {
+    color: $additional-light;
+  }
 }
 
 .hero__content {
@@ -115,6 +128,7 @@
   grid-column: 1 / -1;
   display: flex;
   justify-content: center;
+  align-items: center;
   height: 59px;
   background: transparent;
   border: 2px solid $white-color;
@@ -131,7 +145,7 @@
 }
 
 .hero__button:hover,
- .button-style:focus {
+.button-style:focus {
   position: relative;
   background: $white-color;
   color: $accent-color;

@@ -10,7 +10,8 @@
   line-height: 32px;
   letter-spacing: 0;
   text-align: left;
-  margin: 41px 0 0 0;
+  padding-top: 41px;
+  margin: 0;
   color: $primary-color;
 }
 
@@ -42,6 +43,113 @@
 }
 
 .about__illustration-video {
+  position: relative;
   margin: 32px 0 0 -15px;
   width: 100vw;
+}
+
+
+.about__play-button { 
+  position: absolute;
+  content: "";
+  padding: 0;
+  border: none;
+  background: transparent;
+  width: 72px;
+  height: 72px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -55%);
+  cursor: pointer;
+  z-index: 2;
+
+  &:hover {
+    --button-play-stroke-color: rgba(16,38, 84, 0.6);
+    --button-play-arrow-color: rgba(16,38, 84, 0.6);
+    
+    svg circle {
+      fill: $white-color;
+    }
+  }
+
+  &:focus {
+    --button-play-stroke-color: #102654;
+    --button-play-arrow-color: #102654;
+    
+    svg circle {
+      fill: $button-focus-color;
+    }
+  }
+  
+  &:active {
+    --button-play-stroke-color: #102654;
+    --button-play-arrow-color: #102654;
+    
+    svg circle {
+      fill: $white-color;
+    }
+  }
+
+  :active {
+    --button-play-stroke-color: #102654;
+    --button-play-arrow-color: #102654;
+    
+    svg circle {
+      fill: $white-color;
+    }
+  }
+
+}
+
+@media (min-width: $tablet-width) {
+  .about {
+    min-height: 751px;
+  }
+  .about__title {
+    max-width: 680px;
+    font-size: 42px;
+    line-height: 42px;
+    text-align: center;
+    padding-top: 61px;
+  }
+
+  .about__subtitle {
+    max-width: 680px;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0;
+    text-align: center;
+    margin: 0;
+    padding-top: 19px;
+  }
+
+  .wysiwyg p {
+    display: block;
+    max-width: 510px;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 36px;
+  }
+  
+  .about__illustration-img {
+    width: inherit;
+    margin: 0 auto;
+    padding-top: 36px;
+  }
+
+  .about__illustration-video {
+    position: absolute;
+    width: 270px;
+    height: 170px;
+    margin: 0;
+    padding: 0;
+    left: 50%;
+    transform: translate(-50%, -90px);    
+  }
+
+  .about__play-button {
+    transform: translate(-50%, -50%);
+  }
 }
