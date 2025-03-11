@@ -1,0 +1,43 @@
+.price {
+  background-color: $additional-light;
+}
+.price__title {
+  font-family: $primary-font;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: 0;
+  text-align: center;
+  margin: 40px 0 0;
+}
+
+.price__tabs {
+  display: flex;
+  flex-flow: row nowrap;
+  max-width: 290px;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 0;
+  margin: 31px 0 0 0;
+}
+
+.price__button {
+  font-family: $secondary-font;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0;
+  text-align: left;
+}
+
+.price__cards-list {
+  list-style-type: none;
+}
+
+.price__cards-container {
+  background-color: $white-color;
+}
+
+.price__cards-item {
+  padding: 50px 42px;
+}
