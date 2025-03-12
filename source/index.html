@@ -101,23 +101,35 @@
     <section class="price" data-test="price">
       <div class="container">
         <h2 class="price__title">Абонементы</h2>
-        <ul class="price__tabs">
-          <li class="price__tabs-item">
-            <button class="button-reset price__controller" type="button">1 месяц</button>
+        <ul class="price__filter">
+          <li class="price__filter-item">
+            <button class="button-reset price__controller price__controller--active" type="button">1 месяц</button>
           </li>
-          <li class="price__tabs-item">
+          <li class="price__filter-item">
             <button class="button-reset price__controller" type="button">6 месяцев</button>
           </li>
-          <li class="price__tabs-item">
+          <li class="price__filter-item">
             <button class="button-reset price__controller" type="button">12 месяцев</button>
           </li>
         </ul>
         <div class="price__cards-container">
           <ul class="price__cards-list">
             <li class="price__cards-item cards-item">
-              <h3 class="cards-item__title>">С тренером</h3>
+              <h3 class="cards-item__title">С тренером</h3>
               <p class="cards-item__description">12 занятий</p>
-              <p class="cards-item__price">5000</p>
+              <p class="cards-item__price" data-price="5000">5000</p>
+              <a class="cards-item__button" href="#">Купить абонемент</a>
+            </li>
+            <li class="price__cards-item cards-item">
+              <h3 class="cards-item__title">Дневной</h3>
+              <p class="cards-item__description">с&nbsp;8:00&nbsp;до&nbsp;17:00</p>
+              <p class="cards-item__price" data-price="1700">1700</p>
+              <a class="cards-item__button" href="#">Купить абонемент</a>
+            </li>
+            <li class="price__cards-item cards-item">
+              <h3 class="cards-item__title">Полный&nbsp;день</h3>
+              <p class="cards-item__description">с&nbsp;8:00&nbsp;до&nbsp;22:00</p>
+              <p class="cards-item__price" data-price="2700">2700</p>
               <a class="cards-item__button" href="#">Купить абонемент</a>
             </li>
           </ul>

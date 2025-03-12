@@ -1,3 +1,7 @@
+// .cards-item {
+//   outline: 1px solid red;
+// }
+
 .cards-item__title {
   font-family: $secondary-font;
   font-size: 22px;
@@ -5,5 +9,67 @@
   line-height: 22px;
   letter-spacing: 0;
   text-align: center;
+  color: $primary-color;
+  margin: 0;
+}
+
+.cards-item__description {
+  font-family: $secondary-font;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  letter-spacing: 0;
+  margin-top: 18px;
+  text-align: center;
+}
+
+.cards-item__price {
+  position: relative;
+  color: $accent-color;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: 0;
+  text-align: left;
+  margin: 64px 0 19px 37px;
+  z-index: 1;
+
+  &::before {
+    position: absolute;
+    content: attr(data-price);
+    font-size: 80px;
+    opacity: 0.48;
+    color: $shadow-color;
+    z-index: -1;
+    transform: translate(-15px, -25px);
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    mask-image: url("/__spritemap#rublik-icon");
+    background-color: $primary-color;
+    width: 24px;
+    height: 33px;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 37px
+  }
+}
+
+.cards-item__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 206PX;
+  min-height: 66px;
+  text-decoration: none;
+  border: 2px solid $primary-color;
+  margin: 0;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 12px;
+  letter-spacing: 0;
+  text-transform: uppercase;
   color: $primary-color;
 }
