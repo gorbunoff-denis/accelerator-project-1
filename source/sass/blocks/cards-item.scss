@@ -1,6 +1,6 @@
-// .cards-item {
-//   outline: 1px solid red;
-// }
+.cards-item {
+  background-color: $white-color;
+}
 
 .cards-item__title {
   font-family: $secondary-font;
@@ -61,7 +61,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 206PX;
+  max-width: 206px;
   min-height: 66px;
   text-decoration: none;
   border: 2px solid $primary-color;
@@ -72,4 +72,84 @@
   letter-spacing: 0;
   text-transform: uppercase;
   color: $primary-color;
+}
+
+// Tablet Viewport
+@media (min-width: $tablet-width) {
+  .cards-item__title {
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 0;
+  }
+
+  .cards-item__description {
+    font-family: $secondary-font;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0;
+    margin-top: 22px;
+  }
+
+  .cards-item__price {
+    position: relative;
+    color: $accent-color;
+    font-size: 60px;
+    letter-spacing: 0;
+    text-align: left;
+    margin: 82px 0 22px 42px;
+
+    &::before {
+      font-size: 100px;
+      line-height: 150%;
+      transform: translate(-18px, -62px);
+    }
+  
+    &::after {
+      width: 30px;
+      height: 42px;
+      top: 29px;
+      transform: scale(1.25);
+      right: 38px
+    }  
+  }
+
+  .cards-item__button {
+    max-width: 250px;
+    min-height: 66px;
+  }
+}
+
+// Desktop Viewport
+@media (min-width: $desktop-width) {
+  .cards-item__title {
+    font-size: 26px;
+    line-height: 26px;
+    letter-spacing: 0;
+  }
+
+  .cards-item__description {
+    margin-top: 19px;
+  }
+
+  .cards-item__price {
+    position: relative;
+    color: $accent-color;
+    font-size: 60px;
+    letter-spacing: 0;
+    text-align: left;
+    margin: 76px 0 17px 32px;
+
+    &::before {
+      transform: translate(-18px, -62px);
+    }
+  
+    &::after {
+      width: 30px;
+      height: 42px;
+      top: 29px;
+      transform: scale(1.25);
+      right: 28px
+    }  
+  }
+
 }

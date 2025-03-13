@@ -1,6 +1,9 @@
 .price {
+  position: relative;
   background-color: $additional-light;
+  z-index: 1;
 }
+
 .price__title {
   font-family: $primary-font;
   font-size: 32px;
@@ -20,8 +23,9 @@
   justify-content: space-between;
   list-style-type: none;
   padding: 0;
-  margin: 31px 0 0 0;
+  margin: 31px auto 0;
   border-bottom: 2px solid rgba(120, 120, 120, 0.2);
+  text-align: center;
 }
 
 .price__controller {
@@ -51,7 +55,6 @@
 }
 
 .price__cards-container {
-  background-color: $white-color;
   margin-top: 30px;
 }
 
@@ -61,9 +64,106 @@
   gap: 34px;
   list-style-type: none;
   padding: 0;
-  // margin: 0;
 }
 
 .price__cards-item {
   padding: 51px 42px;
+}
+
+.price__plates-image {
+  display: none;
+}
+
+// Tablet Viewport
+@media (min-width: $tablet-width) {
+  .price__title {
+    font-size: 42px;
+    line-height: 42px;
+    letter-spacing: 0;
+    padding-top: 61px;
+  }
+
+  .price__filter {
+    max-width: 310px;
+    min-width: 310px;
+    margin: 37px auto 0;
+  }
+
+  .price__controller {
+    font-size: 18px;
+    line-height: 18px;
+    letter-spacing: 0;
+    text-align: left;
+  }
+
+  .price__cards-container {
+    margin-top: 46px;
+    padding: 0 149px 0 149px;
+  }
+
+  .price__cards-list {
+  gap: 42px;
+  }
+
+  .price__cards-item {
+    padding: 64px 65px;
+  }
+
+  .price__plates-image {
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -61px;
+    z-index: -1;
+    width: 325px;
+    height: 388px;
+  }
+}
+
+// Desktop Viewport
+@media (min-width: $desktop-width) {
+  .price__title {
+    font-size: 54px;
+    font-weight: 600;
+    line-height: 42px;
+    letter-spacing: 0;
+    padding-top: 106px;
+  }
+
+  .price__filter {
+    max-width: 350px;
+    min-width: 350px;
+    margin: 26px auto 40px;
+  }
+
+  .price__controller {
+    padding: 0 0 8px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .price__cards-container {
+    margin: 0;
+    padding: 0;
+  }
+    
+  .price__cards-list {
+      display: grid;
+      max-width: 1366px;
+      min-width: 1366;
+      grid-template-columns: repeat(3, 360px);
+      grid-template-rows: inherit;
+      gap: 40px;
+    }
+
+    .price__cards-item {
+      padding: 64px 65px;
+    }
+
+    .price__plates-image {
+      right: 0;
+      bottom: -101px;
+      width: 303px;
+      height: 446px;
+    }
 }
