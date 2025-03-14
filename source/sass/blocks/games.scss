@@ -1,0 +1,176 @@
+.games {
+  background-color: $white-color;
+  padding-top: 25px;
+}
+
+.games__content {
+  position: relative;
+  //margin-top: 25px;
+  background-color: $banner-color;
+  padding: 40px 40px;
+}
+
+.games__info {
+  position: relative;
+  display: grid;
+  grid-template-columns: 154px auto auto;
+  grid-template-rows: 25px 12px 12px 30px 29px;
+  grid-template-areas:
+    "games-title date-description date-description"
+    "games-title date-day date-month"
+    "games-title date-day date-year"
+    "games-title time-description time-description"
+    "games-title time time";
+    align-items: start;
+  overflow: hidden;
+}
+
+.games__title {
+  font-family: $primary-font;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 54px;
+  letter-spacing: 0;
+  text-align: left;
+  text-transform: uppercase;
+  color: $white-color;
+  grid-area: games-title;
+  word-spacing: 100vw;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.games__date-title {
+  position: relative;
+  grid-area: date-description;
+  font-family: $secondary-font;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 16px;
+  letter-spacing: 0;
+  text-align: left;
+  color: $white-color;
+  padding: 0;
+  margin: 3px 0 0;
+  overflow: hidden;
+  text-wrap: nowrap;
+
+  &::before {
+    position: fixed;
+    content: "";
+    transform: translateY(18px);
+    width: 56px;
+    height: 2px;
+    background-color: $white-color;
+  }
+}
+
+.games__date-day {
+  grid-area: date-day;
+  font-family: $secondary-font;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0;
+  margin: 0;
+  color: $white-color;
+  overflow: hidden;
+  text-wrap: nowrap;
+  width: 12px;
+  height: 24px;
+}
+
+.games__date-month {
+  grid-area: date-month;
+  font-family: $secondary-font;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 0;
+  margin: 1px 0 0 -4px;
+  color: $white-color;
+  overflow: hidden;
+  text-wrap: nowrap;
+  height: 12px;
+}
+
+.games__date-year {
+  grid-area: date-year;
+  font-family: $secondary-font;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+  letter-spacing: 0;
+  margin: 1px 0 0 -4px;
+  text-align: left;
+  color: $white-color;
+  overflow: hidden;
+  text-wrap: nowrap;
+}
+
+.games__time-title {
+  grid-area: time-description;
+  font-family: $secondary-font;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 20px;
+  letter-spacing: 0;
+  margin: 5px 0 0;
+  text-align: left;
+  color: $white-color;
+  overflow: hidden;
+  text-wrap: nowrap;
+
+  &::before {
+    position: fixed;
+    content: "";
+    transform: translateY(21px);
+    width: 56px;
+    height: 2px;
+    background-color: $white-color;
+  }
+}
+
+.games__time {
+  grid-area: time;
+  font-family: $secondary-font;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0;
+  margin: 0;
+  text-align: left;
+  color: $white-color;
+  overflow: hidden;
+}
+
+.games__description {
+  font-family: $secondary-font;
+  color: $white-color;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 20px;
+  letter-spacing: 0;
+  text-align: left;
+  max-width: 210px;
+  overflow: hidden;
+}
+
+.games__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 210px;
+  min-height: 60px;
+  text-decoration: none;
+  border: 2px solid $white-color;
+  margin: 0;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 12px;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  color: $white-color;
+  padding: 10px 10px;
+}
