@@ -1,0 +1,36 @@
+.features {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  overflow: hidden;
+  background: $additional-light;
+}
+
+.features__container {
+  position: relative;
+  max-width: $mobile-width;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.features__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: grid;
+  grid-template-rows: 173px 172px 225px 172px 172px;
+  // display: flex;
+  // flex-flow: column nowrap;
+  gap: 12px;
+}
+
+.features__title {
+  padding: 0;
+  margin: 0 0 40px;
+  font-family: $primary-font;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: 0;
+  text-align: center;
+  color: $primary-color;
+}

@@ -10,23 +10,24 @@ $primary-font: "Alumni-Sans", "Arial", sans-serif;
 $secondary-font: "Roboto-Condensed", "Impact", sans-serif;
 
 // colors
-$primary-color: #102654;
+
 $primary-gradient: linear-gradient(90deg, #1c3477 0%, #1a3578 39%, #73184b 76%, #b4022a 100%);
+$secondary-gradient: linear-gradient(136deg, #d10a42 0%, #00359f 100%);
+$accent-gradient: linear-gradient(129deg, #d10a42 0%, #0041ca 50%);
+$tabs-gradient: linear-gradient(121deg, #ed0233 0%, #003EB7 100%);
+$text-gradient: linear-gradient(129deg, #d10a42 0%, #0041ca 100%);
+
+
+$primary-color: #102654;
 $white-color: #ffffff;
 $accent-color: #103aae;
 $secondary-color: #1c3374;
 $additional-light: #f8f9fc;
-$button-focus-color: #c8c9cc; 
-$secondary-gradient: linear-gradient(136deg, #d10a42 0%, #00359f 100%);
-
+$button-focus-color: #c8c9cc;
 $additional-dark: #030a1a;
-
-$accent-gradient: linear-gradient(129deg, #d10a42 0%, #0041ca 50%);
 $accent-darken: #2e35ac;
 $filter-color: #d10a42;
-$tabs-gradient: linear-gradient(121deg, #ed0233 0%, #003EB7 100%);
 $banner-color: #ed0233;
-
 $grey-color: #787878;
 $grey-blue-color: #b6bdcc;
 $divider-color: #74819c;
