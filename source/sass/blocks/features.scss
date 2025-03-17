@@ -7,20 +7,9 @@
 
 .features__container {
   position: relative;
-  max-width: $mobile-width;
+  max-width: 100%;
   margin: 0 auto;
   padding: 0;
-}
-
-.features__list {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  display: grid;
-  grid-template-rows: 173px 172px 225px 172px 172px;
-  // display: flex;
-  // flex-flow: column nowrap;
-  gap: 12px;
 }
 
 .features__title {
@@ -33,4 +22,115 @@
   letter-spacing: 0;
   text-align: center;
   color: $primary-color;
+}
+
+.features__list {
+  position: relative;
+  display: grid;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  gap: 34px;
+}
+
+.features__item {
+  position: relative;
+  display: grid;
+  min-height: 114px;
+  max-width: 100%;
+  grid-template-columns: 1fr;
+
+  &--accent {
+    background-color: $secondary-color;
+    margin: 5px 0 5px;
+    padding: 30px 75px 40px;
+    color: $white-color;
+  }
+
+  &--accent p {
+    &:first-child {
+      font-family: $secondary-font;
+      font-size: 64px;
+      font-weight: 700;
+      line-height: 64px;
+      letter-spacing: 0;
+      text-align: center;
+      margin: 0 0 6px;
+    }
+
+    &:nth-child(2) {
+      font-family: $secondary-font;
+      font-size: 22px;
+      font-weight: 700;
+      line-height: 22px;
+      letter-spacing: 0;
+      text-align: center;
+      margin: 0 0 20px;
+    } 
+
+    &:last-child {
+      font-family: $secondary-font;
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 22px;
+      letter-spacing: 0;
+      text-align: center;
+      margin: 0;
+    }
+  }
+}
+
+.features__item-title p {
+  margin: 0 auto;
+  font-family: $secondary-font;
+  max-width: 290px;
+  
+  &:first-child {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 64px;
+    letter-spacing: 0;
+    background: $text-gradient;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-align: center;
+  }
+
+  &:last-child {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0;
+    color: $accent-darken;
+    text-align: center;
+    margin-bottom: 12px;
+  }
+}
+
+.features__item-description p {
+  position: relative;
+  margin: 0 auto;
+  font-family: $secondary-font;
+  max-width: 230px;
+  
+  &:first-child {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0;
+    color: $primary-color;
+    text-align: center;
+    margin-bottom: 13px;
+  }
+
+  &:last-child {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    letter-spacing: 0;
+    color: $primary-color;
+    text-align: center;
+    //transform: translateX(1px);
+    max-width: 230px;
+  }
 }
