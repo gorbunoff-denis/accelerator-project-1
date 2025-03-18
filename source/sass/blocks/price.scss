@@ -122,6 +122,10 @@
 
 // Desktop Viewport
 @media (min-width: $desktop-width) {
+  .price {
+    padding-bottom: 100px;
+  }
+
   .price__title {
     font-size: 54px;
     font-weight: 600;
@@ -162,7 +166,7 @@
 
     .price__plates-image {
       right: 0;
-      bottom: -101px;
+      bottom: 15px;
       width: 303px;
       height: 446px;
     }
