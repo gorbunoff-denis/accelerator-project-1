@@ -136,7 +136,6 @@
 
 
 //TABLET VIEW
-
 @media (min-width: $tablet-width) {
   .features {
     padding-top: 55px;
@@ -248,6 +247,132 @@
       color: $primary-color;
       text-align: left;
       max-width: 240px;
+    }
+  }
+}
+
+//DESKTOP VIEW
+@media (min-width: $desktop-width) {
+  .features {
+    padding-top: 100px;
+    padding-bottom: 60px;
+  }
+  
+  .features__container {
+    position: relative;
+    max-width: $desktop-width;
+    margin: 0 auto;
+    padding: 0 103px;
+  }
+
+  .features__title {
+    max-width: 1160px;
+    max-height: 54px;
+    padding: 0;
+    margin: 0 auto 50px;
+    font-size: 54px;
+    font-weight: 600;
+    line-height: 54px;
+  }
+
+  .features__list {
+    gap: inherit;
+    max-width: 1366px;
+    margin: 0 auto;
+    grid-template-columns: 360px 360px 360px;
+    grid-template-rows: repeat(2, auto);
+    row-gap: 40px;
+    column-gap: 40px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      background-color: $divider-features;
+      width: 360px;
+      height: 1px;
+      top: 150px;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      background-color: $divider-features;
+      width: 360px;
+      height: 1px;
+      top: 150px;
+      right: 0;
+    }
+  }
+
+  .features__item {
+    min-height: 132px;
+    max-width: auto;
+    grid-template-columns: auto 210px;
+    column-gap: 15px;
+  
+    &--accent {
+      display: block;
+      background-color: $secondary-color;
+      margin: 0 auto 40px;
+      padding: 58px 40px 59px;
+      color: $white-color;
+      grid-column: 2/3;
+      grid-row: 1/-1;
+      max-width: 360px;
+      height: auto;
+    }
+  
+    &--accent p {
+      &:first-child {
+        font-size: 70px;
+        line-height: 70px;
+        margin: 0 0 10px;
+      }
+  
+      &:nth-child(2) {
+        font-size: 26px;
+        line-height: 26px;
+        margin: 0 0 29px;
+      } 
+  
+      &:last-child {
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+  }
+
+  .features__item-title p {
+    margin: 0 auto;
+    
+    &:first-child {
+      font-size: 70px;
+      line-height: 70px;
+      text-align: left;
+      margin: 0 0 2px;
+    }
+  
+    &:last-child {
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: 0;
+      color: $accent-darken;
+      text-align: left;
+    }
+  }
+  
+  .features__item-description p {
+    max-width: 203px;
+    
+    &:first-child {
+      max-width: 220px;
+      font-size: 22px;
+      font-weight: 400;
+      line-height: 22px;
+      letter-spacing: 0;
+      color: $primary-color;
+      text-align: left;
+      margin: 1px 0 8px;
     }
   }
 }
