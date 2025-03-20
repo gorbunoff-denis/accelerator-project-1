@@ -15,21 +15,28 @@
   margin: 0 auto;
 }
 
-.juri__list {
-  max-width: 290px;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 25px;
+.juri__swiper {
+  width: 600px;
+  height: 300px;
+  outline: 1px solid red;
+  position: relative;
 }
 
-.juri__item {
-  font-size: 0;
-  justify-items: center;
-  //border: blue 1px solid;
-}
+// .juri__list {
+//   max-width: 290px;
+//   list-style-type: none;
+//   margin: 0;
+//   padding: 0;
+//   display: grid;
+//   grid-template-columns: 1fr 1fr;
+//   gap: 25px;
+// }
+
+// .juri__item {
+//   font-size: 0;
+//   justify-items: center;
+//   //border: blue 1px solid;
+// }
 
 // .juri__image {
 //   outline: 1px solid red;

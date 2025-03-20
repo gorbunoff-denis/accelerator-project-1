@@ -176,61 +176,30 @@
     <section class="juri" data-test="juri">
       <div class="container">
         <h2 class="juri__title">Жюри</h2>
-        <div class="juri__swiper swiper">
-          <ul class="juri__list swiper-wrapper">
-            <li class="juri__item swiper-slide">
-              <h3 class="jury__item-title visually-hidden">Анна Павлова</h3>
-              <div class="juri__image">
-                <picture>
-                  <!-- <source type="image/webp" media="(max-width: 767px)" width="226" height="274" srcset="./img/content/jury/jury-1-mobile@1x.webp 1x, ./img/content/jury/jury-1-mobile@2x.webp 2x"> -->
-                  <!-- <source type="image/webp" media="(max-width: 1365px)" width="268" height="294" srcset="./img/content/jury/jury-1-tablet@1x.webp 1x, ./img/content/jury/jury-1-tablet@2x.webp 2x"> -->
-                  <!-- <source type="image/webp" width="260" height="294" srcset="./img/content/jury/jury-1-desktop@1x.webp 1x, ./img/content/jury/jury-1-desktop@2x.webp 2x"> -->
-                  <!-- <source type="image/jpeg" media="(max-width: 767px)" width="226" height="274" srcset="./img/content/jury/jury-1-mobile@1x.jpg 1x, ./img/content/jury/jury-1-mobile@2x.jpg 2x"> -->
-                  <!-- <source type="image/jpeg" media="(max-width: 1365px)" width="268" height="294" srcset="./img/content/jury/jury-1-tablet@1x.jpg 1x, ./img/content/jury/jury-1-tablet@2x.jpg 2x"> -->
-                  <img src="./img/juri/juri-pavlova-mobile@1x.jpg" width="260" height="300" srcset="./img/juri/juri-pavlova-mobile@2x.jpg 2x" alt="Фото члена жюри Анны Павловой.">
-                </picture>
-              </div>
-              <div class="juri__information juri-information">
-                <h4 class="juri-information__name">Анна Павлова</h4>
-                <p class="juri-information__specialty">Stretching</p>
-                <ul class="juri-information__achievement-list">
-                  <li class="juri-information__achievement-item">Дипломированный специалист МГПУ</li>
-                  <li class="juri-information__achievement-item">Мастер спорта России по фитнес-танцам</li>
-                  <li class="juri-information__achievement-item">Опыт — 4 года</li>
-                </ul>
-              </div>
-            </li>
-            <li class="juri__item swiper-slide">
-              <h3 class="jury__item-title visually-hidden">Анна Павлова</h3>
-              <div class="juri__image">
-                <picture>
-                  <!-- <source type="image/webp" media="(max-width: 767px)" width="226" height="274" srcset="./img/content/jury/jury-1-mobile@1x.webp 1x, ./img/content/jury/jury-1-mobile@2x.webp 2x"> -->
-                  <!-- <source type="image/webp" media="(max-width: 1365px)" width="268" height="294" srcset="./img/content/jury/jury-1-tablet@1x.webp 1x, ./img/content/jury/jury-1-tablet@2x.webp 2x"> -->
-                  <!-- <source type="image/webp" width="260" height="294" srcset="./img/content/jury/jury-1-desktop@1x.webp 1x, ./img/content/jury/jury-1-desktop@2x.webp 2x"> -->
-                  <!-- <source type="image/jpeg" media="(max-width: 767px)" width="226" height="274" srcset="./img/content/jury/jury-1-mobile@1x.jpg 1x, ./img/content/jury/jury-1-mobile@2x.jpg 2x"> -->
-                  <!-- <source type="image/jpeg" media="(max-width: 1365px)" width="268" height="294" srcset="./img/content/jury/jury-1-tablet@1x.jpg 1x, ./img/content/jury/jury-1-tablet@2x.jpg 2x"> -->
-                  <img src="./img/juri/juri-pavlova-mobile@1x.jpg" width="260" height="300" srcset="./img/juri/juri-pavlova-mobile@2x.jpg 2x" alt="Фото члена жюри Анны Павловой.">
-                </picture>
-              </div>
-              <div class="juri__information juri-information">
-                <h4 class="juri-information__name">Анна Павлова</h4>
-                <p class="juri-information__specialty">Stretching</p>
-                <ul class="juri-information__achievement-list">
-                  <li class="juri-information__achievement-item">Дипломированный специалист МГПУ</li>
-                  <li class="juri-information__achievement-item">Мастер спорта России по фитнес-танцам</li>
-                  <li class="juri-information__achievement-item">Опыт — 4 года</li>
-                </ul>
-              </div>
-            </li>
-          </ul>
-        
-          <!-- Кнопки навигации -->
-          <div class="juri__button-prev swiper-button-prev"></div>
-          <div class="juri__button-next swiper-button-next"></div>
-        
-          <!-- Пагинация -->
-          <div class="swiper-pagination"></div>
-        </div>
+        <div class="juri__slider-container">
+          <div class="juri__slider swiper">
+            <ul class="juri__list swiper-wrapper">
+              <li class="juri__item juri-card swiper-slide" tabindex="0">
+                <figure class="juri-person__illustration">
+                  <picture>
+                    <!-- <source width="260" height="300" type="image/webp" srcset="img/juri-foto-pavlova@1x.webp 1x, img/juri-foto-pavlova@2x.webp 2x"> -->
+                    <img src="img/juri/juri-pavlova-mobile@1x.jpg" srcset="img/juri/juri-pavlova-mobile@2x.jpg" width="260" height="300" alt="Фото члена жюри Анны Павловой" loading="lazy">
+                  </picture>
+                  <figcaption>Анна Павлова</figcaption>
+                </figure>
+                <div class="juri-person__information">
+                  <h3 class="juri-person__title">Анна Павлова</h3>
+                  <p class="juri-person__text">CrossFit</p>
+                  <ul class="juri-person__progress-list">
+                    <li>Certified Level 3 Trainer</li>
+                    <li>Победитель чемпионата России по CrossFit</li>
+                    <li>Опыт — 6 лет</li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>  
+        <div>
       </div>
     </section>
     <!-- <section class="features" data-test="features">
@@ -306,6 +275,8 @@
     <!-- <svg>
           <use href="/__spritemap#sprite-user"></use>
         </svg>  -->
+        
+    <script src="js/vendor/swiper-bundle.js"></script>
+    <script type="module" src="js/main.js"></script>
   </body>
-
 </html>
