@@ -176,31 +176,73 @@
     <section class="juri" data-test="juri">
       <div class="container">
         <h2 class="juri__title">Жюри</h2>
-        <div class="juri__slider-container">
-          <div class="juri__slider swiper">
-            <ul class="juri__list swiper-wrapper">
-              <li class="juri__item juri-card swiper-slide" tabindex="0">
-                <figure class="juri-person__illustration">
-                  <picture>
-                    <!-- <source width="260" height="300" type="image/webp" srcset="img/juri-foto-pavlova@1x.webp 1x, img/juri-foto-pavlova@2x.webp 2x"> -->
-                    <img src="img/juri/juri-pavlova-mobile@1x.jpg" srcset="img/juri/juri-pavlova-mobile@2x.jpg" width="260" height="300" alt="Фото члена жюри Анны Павловой" loading="lazy">
-                  </picture>
-                  <figcaption>Анна Павлова</figcaption>
-                </figure>
-                <div class="juri-person__information">
-                  <h3 class="juri-person__title">Анна Павлова</h3>
-                  <p class="juri-person__text">CrossFit</p>
-                  <ul class="juri-person__progress-list">
-                    <li>Certified Level 3 Trainer</li>
-                    <li>Победитель чемпионата России по CrossFit</li>
-                    <li>Опыт — 6 лет</li>
-                  </ul>
-                </div>
-              </li>
-            </ul>
-          </div>  
-        <div>
+        <div class="juri__swiper-container swiper">
+          <!-- Additional required wrapper -->
+          <ul class="juri__swiper-wrapper swiper-wrapper">
+            <!-- Slides -->
+            <li class="swiper-slide">1</li>
+            <li class="swiper-slide">2</li>
+            <li class="swiper-slide">3</li>
+            <!-- <li class="juri__swiper-slide juri-card swiper-slide">
+              <figure class="juri-card__photo">
+                <picture>
+                  <img src="img/juri/juri-pavlova-mobile@1x.jpg" srcset="img/juri/juri-pavlova-mobile@2x.jpg 2x" width="260" height="300" alt="Фото члена жюри Анны Павловой" loading="lazy">
+                </picture>
+                <figcaption>Анна Павлова</figcaption>
+              </figure>
+              <div class="juri-card__information">
+                <h3 class="juri-card__title">Анна Павлова</h3>
+                <p class="juri-card__text">CrossFit</p>
+                <ul class="juri-card__progress-list">
+                  <li>Certified Level 3 Trainer</li>
+                  <li>Победитель чемпионата России по CrossFit</li>
+                  <li>Опыт — 6 лет</li>
+                </ul>
+              </div>
+            </li> -->
+            
+            <!-- <li class="juri__swiper-slide juri-card swiper-slide">
+              <figure class="juri-card__photo">
+                <picture>
+                  <img src="img/juri/juri-pavlova-mobile@1x.jpg" srcset="img/juri/juri-pavlova-mobile@2x.jpg 2x" width="260" height="300" alt="Фото члена жюри Анны Павловой" loading="lazy">
+                </picture>
+                <figcaption>Анна Павлова</figcaption>
+              </figure>
+              <div class="juri-card__information">
+                <h3 class="juri-card__title">Анна Павлова</h3>
+                <p class="juri-card__text">CrossFit</p>
+                <ul class="juri-card__progress-list">
+                  <li>Certified Level 3 Trainer</li>
+                  <li>Победитель чемпионата России по CrossFit</li>
+                  <li>Опыт — 6 лет</li>
+                </ul>
+              </div>
+            </li> -->
+
+            <!-- <li class="juri__swiper-slide juri-card swiper-slide">
+              <figure class="juri-card__photo">
+                <picture> 
+                  <img src="img/juri/juri-pavlova-mobile@1x.jpg" srcset="img/juri/juri-pavlova-mobile@2x.jpg 2x" width="260" height="300" alt="Фото члена жюри Анны Павловой" loading="lazy">
+                </picture>
+                <figcaption>Анна Павлова</figcaption>
+              </figure>
+              <div class="juri-card__information">
+                <h3 class="juri-card__title">Анна Павлова</h3>
+                <p class="juri-card__text">CrossFit</p>
+                <ul class="juri-card__progress-list">
+                  <li>Certified Level 3 Trainer</li>
+                  <li>Победитель чемпионата России по CrossFit</li>
+                  <li>Опыт — 6 лет</li>
+                </ul>
+              </div>
+            </li> -->
+          </ul>
+          <!-- If we need navigation buttons -->
+          <div class="juri__button-prev-js"></div>
+          <div class="juri__button-next-js"></div>
+        </div>
       </div>
+
     </section>
     <!-- <section class="features" data-test="features">
       <div class="features__container">
@@ -270,7 +312,7 @@
     </svg> -->
     <!-- примеры требуемых атрибутов data-test="*" -->
 
-    <script type="module" src="js/main.js"></script>
+    <!-- <script type="module" src="js/main.js"></script> -->
 
     <!-- <svg>
           <use href="/__spritemap#sprite-user"></use>
